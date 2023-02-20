@@ -1,0 +1,93 @@
+.home-container{
+    display:flex;
+
+    .all-products{
+        width: 85%;
+        min-height: calc(100vh - 80px);
+        border-right: 2px solid #000;
+        padding: 20px 40px;
+        font-family: "Roboto", sans-serif;
+        .top{
+            display:flex;
+            align-items: center;
+            justify-content: space-between;
+            h4{
+                text-transform: uppercase;
+                font-weight: bold;
+                border-left: 8px solid aqua;
+                margin-bottom: 25px;
+            }
+            .view-all {
+                color: black;
+                cursor: pointer;
+            }
+        }
+        .products-thumbnail{
+            display:flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .product{
+                .cover{
+                    cursor: pointer;
+                    .img{
+                        border-radius: 5px;
+                    }
+                }
+                .detail{
+                    width: 130px;
+                    .name{
+                        font-weight: bold;
+                        height: 20px;
+                        margin-top: 5px;
+                        cursor: pointer;
+                    
+                    }
+                }
+            }
+        }
+        
+    }
+    .popular-products{
+        width: 25%;
+        min-height: calc(100vh - 80px);
+        padding: 20px 40px;
+        font-family: "Roboto", sans-serif;
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            border-left: 8px solid aqua;
+            margin-bottom: 25px;
+        }
+        .products{
+            .product{
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .name{
+                    font-weight: bold;
+                    cursor: pointer;
+                    background-color: aqua;
+                }
+            }
+            .view-all{
+                color:black;
+                font-weight: bold;
+                text-align: left;
+                margin-top: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+ .rating {
+    padding-right: 45px;
+    position: relative;
+    right: 0;
+    
+    .rating-value{
+        position: absolute;
+        font-weight: bold;
+    }
+ }

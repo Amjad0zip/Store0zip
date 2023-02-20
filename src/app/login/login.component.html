@@ -1,0 +1,24 @@
+<div class="header-container">
+    <div class="logout" (click)="logout()">Register&nbsp;&nbsp;</div>
+</div>
+
+<div class="login container">
+    <img class='img' src="assets/images/logo.png">
+    <div class="logo">STREAMING app</div>
+    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam modi quas molestias provident fuga blanditiis repellat
+    doloribus. Explicabo ea natus totam suscipit corrupti. Fugiat rem pariatur, ut ea exercitationem odio!</div>
+</div>
+<div class="login-form">
+    <div class="form-group">
+    <label for="uname">Username</label>
+    <input type="text" name="uname" class="form-control" [(ngModel)]="username"/>
+    </div>
+    <div class="form-group">
+    <label for="pword">Password</label>
+    <input type="password" name="pword" class="form-control" [(ngModel)]="password" />
+    </div>
+    <div>
+        <div class="error">{{ errorMsg }}</div>
+        <br><button class="btn btn-dark" (click)="login()">Login</button>
+    </div>
+    </div>
